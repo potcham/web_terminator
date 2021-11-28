@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Arnold - Ill be back</title>
+<meta http-equiv="X-UA-Compatible" content=“IE=edge”>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/jpeg" href="images/terminator1.jpg">
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Henny+Penny|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+<header>
+    <h2>
+        <a href="" target="_blank" class="logo">
+            <img src="images/terminator2.jpeg" alt="" width="100" height="100"/>
+        </a>
+    </h2>
+    <nav>
+            <li><a href="#top">Inicio</a></li>
+            <li><a href="#about">Descripción</a></li>
+            <li><a href="#illus">Tenología</a></li>                        
+            <li><a href="#chapters">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+    </nav>
+</header>
+<section id="hero" class="hero">
+   <div class="background-image"></div>
+    <h1>El futuro es desconocido</h1>
+    <h3>El pasado puede ser cambiado<br>
+    <span class="smallerheadline">AI | HACK | VISION | ROBOT </span></h3>
+</section>
+<section id="about" class="about">
+   <img src="images/terminator_face.jpg" alt="Robot Humanoide" title="T800" class="round" width="500" height="auto">
+    <h3>TERMINATOR</h3>
+    <p> Terminator es un robot autónomo concebido como un soldado, infiltrado y asesino indestructible.</p>    
+    <hr>
+    <h3>CARACTERISTICAS</h3>
+    <ul class="grid">
+        <li>
+            <img src="images/terminator_vida_util.jpg" title="Vida util" alt="Vida util" class="round" width="300" height="auto">
+            <h4>VIDA ÚTIL</h4>
+            <p>Tiene un período funcional de 120 años en una celda de energía..</p>
+
+        </li>
+        <li>
+           <img src="images/terminator_infiltration.jpg" title="Infiltracion" alt="Infiltracion" class="round" width="300" height="auto">
+            <h4>INFILTRACIÓN HUMANA</h4>
+            <p>Cubierto con tejido vivo como carne, piel, cabello y fluidos corporales humanos.</p>
+        </li>
+        <li>
+           <img src="images/terminator_sistema.jpg" title="sistema" alt="sistema" class="round" width="auto" height="300">
+            <h4>SISTEMA INTELIGENTE</h4>
+            <p>Capaz de calcular la distancia y trayectoria de objetos; para dar seguimiento a su objetivo.</p>
+        </li>
+    </ul>
+    <hr>
+</section>
+<section id="illus" class="illustrations">
+    <img src="images/terminator_productos.jpg" alt="producto" title="producto" class="round" width="500" height="auto">
+    <h3>Tecnología disponible</h3>
+    <ul class="grid">
+        <li class="small" style="background-image: url(images/terminator_t800.jpg)" alt=""></li>
+        
+        <li class="large" style="background-image: url(images/terminator_moto.jpg)" alt=""></li>
+        <li class="small" style="background-image: url(images/terminator_dron.jpg)" alt=""></li>
+        <li class="large" style="background-image: url(images/terminator_harvester.jpg)" alt=""></li>
+    </ul>
+    <hr>
+</section>
+<section id="chapters" class="chapters">
+   <img src="images/terminator_contacto.jpeg" alt="" class="round" width="500" height="auto">
+    <h3>Nuestros servicios para ti</h3>
+    <ul>
+        <li><a href="#">¿Eliminar a alguien del pasado?</a></li>
+        <li><a href="#">Rastreo automatico de persona perdidas</a></li>
+        <li><a href="#">Protección en contra de otros terminators</a></li>        
+    </ul>
+</section>
+<section id="contacto" class="contacto">
+    <img class="round" src="images/terminator_calling.jpg" alt="contacto" title="contacto"/>
+    <h3>Contactanos</h3>
+    <div>
+        <form onsubmit="return false">
+            <div class="mb-2">                                
+                <input 
+                    id="txtName"
+                    type="text" 
+                    name="Nombre" 
+                    placeholder="Nombres y Apellidos" 
+                    required
+                    maxlength="200" 
+                    class="form-control form-control-lg">
+            </div> 
+            <div class="mb-2">                                
+                <input 
+                    id="txtEmail"
+                    type="email" 
+                    name="Email" 
+                    placeholder="Correo Electrónico" 
+                    required
+                    maxlength="200" 
+                    class="form-control form-control-lg">
+            </div> 
+            <div class="mb-2">                                
+                <input 
+                    id="txtCell"
+                    type="text" 
+                    name="Celular" 
+                    placeholder="Celular" 
+                    required
+                    maxlength="9" 
+                    minlength="9" 
+                    class="form-control form-control-lg">
+            </div>
+            <br> 
+            <div class="mb-2">                            
+                <div class="term">
+                    <input 
+                        type="checkbox" 
+                        id="chkTOC01" 
+                        >                                                 
+                    <label>
+                        Acepto la 
+                            <a style="text-decoration: underline;">Política de envío de Comunicaciones Comerciales.</a>
+                    </label>                                                                                        
+                </div> 
+                <div class="term">
+                    <input 
+                        type="checkbox" 
+                        id="chkTOC02" 
+                        >                                                     
+                    <label>
+                        Acepto la <a style="text-decoration: underline;">Política de Protección de Datos Personales y los Términos y Condiciones.</a>
+                    </label>                                            
+                </div>                                                                    
+            </div>  
+            <div>                                
+                <button onclick="formEvalute()"                                
+                    class="btn btn-lg btn-block px-0 text-muted">
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </div>
+    <div id="divMsg">                    
+    </div>
+</section>
+<footer>
+  <ul>
+      <li><a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-snapchat-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-pinterest-square"></i></a></li>
+      <li><a href="#" target="_blank"><i class="fa fa-github-square"></i></a></li>
+  </ul>
+  <!--
+   <p>Read the whole <i>Treasure Island</i> novel on the internet</p>
+    <p>&copy;<script>document.write(new Date().getFullYear())</script> Whoever</p>
+  -->
+  <div class="copy-right">
+    <div class="logo">
+        <img src="images/terminator2.jpeg" alt=""/>
+    </div>  
+    <p class="copy-right-text">    
+        © <script>document.write(new Date().getFullYear())</script> SKYNET: IT IS TIME.
+    </p>
+  </div>
+</footer>
+
+<script>
+    function formEvalute(){
+        let txtName = document.getElementById("txtName");
+        let txtEmail = document.getElementById("txtEmail");
+        let txtCell = document.getElementById("txtCell");
+        let chkTOC01 = document.getElementById("chkTOC01");
+        let chkTOC02 = document.getElementById("chkTOC02");
+        let divMsg =  document.getElementById("divMsg");
+
+        let msg = "";
+        let formOk = 0;
+
+        if(txtName.value.length <= 0){
+            msg = "Debe ingresar el nombre"; 
+        }else{
+            formOk++;
+        }
+
+        if(txtEmail.value.length <= 0){
+            msg = "Debe ingresar un email"; 
+        }else{
+            formOk++;
+        }
+
+        if(txtCell.value.length <= 0){
+            msg = "Debe ingresar un celular";                    
+        }else{
+            formOk++;
+        }
+
+        /*
+        msg += "Name : " + txtName.value;
+        msg += "\nEmail : " + txtEmail.value;
+        msg += "\nCell : " + txtCell.value;
+        msg += "\nTOC-1 : " + chkTOC01.checked;
+        msg += "\nTOC-2 : " + chkTOC02.checked;
+        */
+
+        if(formOk===3){
+            msg = `
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Campo</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name :</td>
+                        <td>${txtName.value}</td>
+                    </tr>
+                    <tr>
+                        <td>Email :</td>
+                        <td>${txtEmail.value}</td>
+                    </tr>
+                    <tr>
+                        <td>Celular :</td>
+                        <td>${txtCell.value}</td>
+                    </tr>
+                    <tr>
+                        <td>TOC-1 :</td>
+                        <td>${chkTOC01.checked}</td>
+                    </tr>
+                    <tr>
+                        <td>TOC-2 :</td>
+                        <td>${chkTOC02.checked}</td>
+                    </tr>
+                    <tr>
+                        <td>GRACIAS :</td>
+                        <td>AHORA IREMOS POR TI</td>
+                    </tr>
+                </tbody>
+            </table>`;
+        }
+        //alert(msg);
+        divMsg.innerHTML = msg;
+    }
+</script>
+
+</body>
+</html>
